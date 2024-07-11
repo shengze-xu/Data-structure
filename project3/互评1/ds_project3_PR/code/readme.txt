@@ -1,0 +1,3 @@
+usage：第一行输入pick-up spots的数量和ambulance dispatch centers的数量，中间以空格隔开。第二行输入每个center有几辆车，以空格隔开。第三行输入城市中共有几条街道，以M表示。之后的M行记录街道信息，每行由street连接的两头，即center或是spot组成，还包括在这一street的一端移动到另一端所需的时间，即cost。之后一行记录紧急呼叫次数。下一行记录每一呼叫地点，以空格隔开
+
+result：如果没有车辆空闲，则输出“All Busy”。如果有车辆空闲，则对每一个紧急呼叫地点，第一行输出center到spot路径上所有要经过的地点，第二行输出这一路径所需花费的总时间，即cost。

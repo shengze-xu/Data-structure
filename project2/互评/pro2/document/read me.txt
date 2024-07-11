@@ -1,0 +1,79 @@
+代码检查方法
+法一：
+打开PTA对应的题目网址https://pintia.cn/problem-sets/994805148990160896/problems/994805154321121280
+或者登录PTA后寻找 固定题目集->PAT (Top Level) Practice->1006 Tree Traversals - Hard Version (35 分)
+然后将.C文件中的代码复制到答题框中，点击提交，即可得知代码正确性
+
+法二：
+打开.C文件，编译运行，输入测试用例来判断代码的正确性
+以下给出一些测试用例和期望输出
+Sample Input 1: //there is no  missing data, it can create correct tree
+9
+3 - 2 1 7 9 - 4 6
+9 - 5 3 2 1 - 6 4
+3 1 - - 7 - 6 8 -
+Sample Output 1: //pass
+3 5 2 1 7 9 8 4 6
+9 7 5 3 2 1 8 6 4
+3 1 2 5 7 4 6 8 9
+9 7 8 5 6 3 2 4 1
+
+Sample Input 2:
+ //missing data is more than one, it can’t create tree
+3
+- - -
+- 1 -
+1 - -
+Sample Output 2:
+Impossible
+
+Sample Input 3: 
+9
+3 - 2 1 7 9 - 4 6
+9 - - 3 2 1 - 6 4
+3 1 - - 7 - 6 8 -
+Sample Output 3:
+3 5 2 1 7 9 8 4 6
+9 7 5 3 2 1 8 6 4
+3 1 2 5 7 4 6 8 9
+9 7 8 5 6 3 2 4 1
+Sample Input 4: 
+1
+-
+-
+-
+Sample Output 4:
+1
+1
+1
+1
+
+Sample Input 5: 
+9
+1 2 3 4 5 6 7 8 -
+- 8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8 -
+Sample Output 5:
+1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8 9
+9 8 7 6 5 4 3 2 1
+
+Sample Input 6: 
+9
+1 2 - 6 7 8 - 5
+- 7 6 8 2 1 - 5
+7 4 6 8 2 5 3 1
+Sample Output 6:
+Impossible
+
+Sample Input 7: 
+10
+1 2 3 4 5 6 7 8 9 10
+- 9 8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8 9 -
+Sample Output 5:
+1 2 3 4 5 6 7 8 9 10
+10 9 8 7 6 5 4 3 2 1
+1 2 3 4 5 6 7 8 9 10
+10 9 8 7 6 5 4 3 2 1

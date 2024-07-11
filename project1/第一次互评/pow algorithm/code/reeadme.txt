@@ -1,0 +1,15 @@
+For the code file, project of the visual studio version and dev c++ version are both provided.
+1.Using Dev c++
+    Open the folder "project for dev c++".
+    Open the file "pow.dev".
+    Click on " 编译运行" or press F11.
+    The program shall work successfully.
+    If the program doesn't run properly, try to create a new project and include the source file.
+2.Using Microsoft Visual Studio
+    Open the folder "project for visual studio".
+    Open the file "pow.sln".
+    You should check if the Windows SDK version is supported.
+        Right click on the project and choose "属性".
+        Change the SDK version to a supported one.
+        PS: For better compatibility, this project uses Windows SDK 8.1.
+    Compile and run the program.
